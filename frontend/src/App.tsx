@@ -1,10 +1,23 @@
-import React from 'react';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout";
+import Recipes from "./pages/Recipes";
+import Pantry from "./pages/Pantry";
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
-      <h1 className="text-3xl font-bold text-gray-800">Welcome to Kitchenvert 🍳</h1>
-    </div>
+    <Routes>
+      <Route element={<Layout />}>
+        <Route path="/recipes" element={<Recipes />} />
+        <Route path="/pantry" element={<Pantry />} />
+        <Route
+          path="*"
+          element={
+            <div className="text-center text-xl">Welcome to Kitchenvert 🍳</div>
+          }
+        />
+      </Route>
+    </Routes>
   );
 }
 
