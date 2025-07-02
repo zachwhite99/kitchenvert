@@ -23,7 +23,7 @@ export const mockPantryItems: PantryItem[] = [
   },
   {
     id: '4',
-    ingredient: { item: 'chicken breast', number: 2, unit: 'pounds', category: 'meat' },
+    ingredient: { item: 'chicken breast', number: 2, unit: 'pound', category: 'meat' },
     expiryDate: new Date('2024-02-12'),
     category: 'meat'
   },
@@ -65,7 +65,7 @@ export const mockPantryItems: PantryItem[] = [
   },
   {
     id: '11',
-    ingredient: { item: 'rice', number: 2, unit: 'cups', category: 'grains' },
+    ingredient: { item: 'rice', number: 2, unit: 'cup', category: 'grains' },
     expiryDate: new Date('2025-01-01'),
     category: 'grains'
   },
@@ -89,7 +89,7 @@ export const mockPantryItems: PantryItem[] = [
   },
   {
     id: '15',
-    ingredient: { item: 'flour', number: 2, unit: 'cups', category: 'baking' },
+    ingredient: { item: 'flour', number: 2, unit: 'cup', category: 'baking' },
     expiryDate: new Date('2025-01-01'),
     category: 'baking'
   }
